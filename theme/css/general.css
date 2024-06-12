@@ -1,7 +1,5 @@
 /* Base styles and content styles */
 
-@import 'variables.css';
-
 :root {
     /* Browser default font-size is 16px, this way 1 rem = 10px */
     font-size: 62.5%;
@@ -43,33 +41,14 @@ h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
     font-size: unset;
 }
 
-.left {
-    float: left;
-}
+.left { float: left; }
+.right { float: right; }
+.boring { opacity: 0.6; }
+.hide-boring .boring { display: none; }
+.hidden { display: none !important; }
 
-.right {
-    float: right;
-}
-
-.boring {
-    opacity: 0.6;
-}
-
-.hide-boring .boring {
-    display: none;
-}
-
-.hidden {
-    display: none !important;
-}
-
-h2, h3 {
-    margin-block-start: 2.5em;
-}
-
-h4, h5 {
-    margin-block-start: 2em;
-}
+h2, h3 { margin-block-start: 2.5em; }
+h4, h5 { margin-block-start: 2em; }
 
 .header + .header h3,
 .header + .header h4,
@@ -103,17 +82,14 @@ h6:target::before {
     padding: 0 var(--page-padding);
     margin-block-start: calc(0px - var(--menu-bar-height)); /* Compensate for the #menu-bar-hover-placeholder */
 }
-
 .page-wrapper {
     box-sizing: border-box;
     background-color: var(--bg);
 }
-
 .no-js .page-wrapper,
 .js:not(.sidebar-resizing) .page-wrapper {
     transition: margin-left 0.3s ease, transform 0.3s ease; /* Animation: slide away */
 }
-
 [dir=rtl] .js:not(.sidebar-resizing) .page-wrapper {
     transition: margin-right 0.3s ease, transform 0.3s ease; /* Animation: slide away */
 }
@@ -122,42 +98,21 @@ h6:target::before {
     overflow-y: auto;
     padding: 0 5px 50px 5px;
 }
-
 .content main {
     margin-inline-start: auto;
     margin-inline-end: auto;
     max-width: var(--content-max-width);
 }
-
-.content p {
-    line-height: 1.45em;
-}
-
-.content ol {
-    line-height: 1.45em;
-}
-
-.content ul {
-    line-height: 1.45em;
-}
-
-.content a {
-    text-decoration: none;
-}
-
-.content a:hover {
-    text-decoration: underline;
-}
-
-.content img, .content video {
-    max-width: 100%;
-}
-
+.content p { line-height: 1.45em; }
+.content ol { line-height: 1.45em; }
+.content ul { line-height: 1.45em; }
+.content a { text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+.content img, .content video { max-width: 100%; }
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
 }
-
 .content .header:link,
 .content .header:visited:hover {
     text-decoration: none;
@@ -167,29 +122,23 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
 }
-
 table td {
     padding: 3px 20px;
     border: 1px var(--table-border-color) solid;
 }
-
 table thead {
     background: var(--table-header-bg);
 }
-
 table thead td {
     font-weight: 700;
     border: none;
 }
-
 table thead th {
     padding: 3px 20px;
 }
-
 table thead tr {
     border: 1px var(--table-header-bg) solid;
 }
-
 /* Alternate background colors for rows */
 table tbody tr:nth-child(2n) {
     background: var(--table-alternate-bg);
@@ -245,12 +194,10 @@ kbd {
 .footnote-definition + :not(.footnote-definition) {
     margin-block-start: 2em;
 }
-
 .footnote-definition {
     font-size: 0.9em;
     margin: 0.5em 0;
 }
-
 .footnote-definition p {
     display: inline;
 }
@@ -270,7 +217,6 @@ kbd {
     margin: 5px;
     z-index: 1000;
 }
-
 .tooltipped .tooltiptext {
     visibility: visible;
 }

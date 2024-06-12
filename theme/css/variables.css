@@ -4,277 +4,144 @@
     --sidebar-width: 300px;
     --sidebar-resize-indicator-width: 8px;
     --sidebar-resize-indicator-space: 2px;
-    --page-padding: 20px; /* Increased padding for a bit more space around content */
-    --content-max-width: 1024px; /* Keeping it tight for optimal line length */
+    --page-padding: 15px;
+    --content-max-width: 860px;
     --menu-bar-height: 50px;
-    --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
-    --code-font-size: 0.95em; /* Slightly increased for better legibility in code blocks */
-    --base-font-size: 16px; /* Adding a base font size for consistency */
-    --base-line-height: 1.6; /* Setting a comfortable line height for readability */
-    --base-font-color: #333; /* A softer color than pure black for text, easier on the eyes */
-    --base-background-color: #FFF; /* Default background color, can be overridden in themes */
-    --heading-font-weight: 600; /* Making headings slightly bolder for better hierarchy */
-    --text-margin-bottom: 1rem; /* Providing consistent spacing below paragraphs and similar elements */
+    --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    --code-font-size: 0.875em; /* Adjust the ACE font size accordingly in editor.js */
 }
 
-/* Themes */
-
-.ayu {
-    --bg: hsl(210, 25%, 8%);
-    --fg: #c5c5c5;
-
-    --sidebar-bg: #14191f;
-    --sidebar-fg: #c8c9db;
-    --sidebar-non-existant: #5c6773;
-    --sidebar-active: #ffb454;
-    --sidebar-spacer: #2d334f;
-
-    --scrollbar: var(--sidebar-fg);
-
-    --icons: #737480;
-    --icons-hover: #b7b9cc;
-
-    --links: #0096cf;
-
-    --inline-code-color: #ffb454;
-
-    --theme-popup-bg: #14191f;
-    --theme-popup-border: #5c6773;
-    --theme-hover: #191f26;
-
-    --quote-bg: hsl(226, 15%, 17%);
-    --quote-border: hsl(226, 15%, 22%);
-
-    --warning-border: #ff8e00;
-
-    --table-border-color: hsl(210, 25%, 13%);
-    --table-header-bg: hsl(210, 25%, 28%);
-    --table-alternate-bg: hsl(210, 25%, 11%);
-
-    --searchbar-border-color: #848484;
-    --searchbar-bg: #424242;
-    --searchbar-fg: #fff;
-    --searchbar-shadow-color: #d4c89f;
-    --searchresults-header-fg: #666;
-    --searchresults-border-color: #888;
-    --searchresults-li-bg: #252932;
-    --search-mark-bg: #e3b171;
-
-    --color-scheme: dark;
-}
-
-.coal {
-    --bg: hsl(200, 7%, 8%);
-    --fg: #98a3ad;
-
-    --sidebar-bg: #292c2f;
-    --sidebar-fg: #a1adb8;
-    --sidebar-non-existant: #505254;
-    --sidebar-active: #3473ad;
-    --sidebar-spacer: #393939;
-
-    --scrollbar: var(--sidebar-fg);
-
-    --icons: #43484d;
-    --icons-hover: #b3c0cc;
-
-    --links: #2b79a2;
-
-    --inline-code-color: #c5c8c6;
-
-    --theme-popup-bg: #141617;
-    --theme-popup-border: #43484d;
-    --theme-hover: #1f2124;
-
-    --quote-bg: hsl(234, 21%, 18%);
-    --quote-border: hsl(234, 21%, 23%);
-
-    --warning-border: #ff8e00;
-
-    --table-border-color: hsl(200, 7%, 13%);
-    --table-header-bg: hsl(200, 7%, 28%);
-    --table-alternate-bg: hsl(200, 7%, 11%);
-
-    --searchbar-border-color: #aaa;
-    --searchbar-bg: #b7b7b7;
-    --searchbar-fg: #000;
-    --searchbar-shadow-color: #aaa;
-    --searchresults-header-fg: #666;
-    --searchresults-border-color: #98a3ad;
-    --searchresults-li-bg: #2b2b2f;
-    --search-mark-bg: #355c7d;
-
-    --color-scheme: dark;
-}
-
+/* Light Theme - Professional */
 .light {
-    --bg: #f5f9ff; /* Light blue background for a fresh look */
-    --fg: #2c3e50; /* Dark blue-grey font color for better readability */
+    --bg: #ffffff;
+    --fg: #424242; /* Darker text for better readability */
 
-    --sidebar-bg: #ffffff; /* White for sidebar background */
-    --sidebar-fg: #2c3e50; /* Dark blue-grey for sidebar text */
-    --sidebar-active: #1e90ff; /* Bright blue for active elements */
-    --sidebar-spacer: #dfe6f0; /* Light grey-blue for sidebar spacers */
+    --sidebar-bg: #f5f5f5; /* Soft light gray for sidebar */
+    --sidebar-fg: #6a1b9a; /* Subtle purple */
+    --sidebar-non-existant: #cccccc;
+    --sidebar-active: #7b1fa2; /* A slightly more vivid purple */
+    --sidebar-spacer: #e0e0e0; /* Lighter gray for spacers */
 
-    --scrollbar: #a8b8d0; /* Light blue-grey for scrollbar */
+    --scrollbar: #b0bec5; /* Neutral scrollbar color */
 
-    --icons: #2c3e50; /* Dark blue-grey icons */
-    --icons-hover: #1e90ff; /* Bright blue for icons on hover */
+    --icons: #7b1fa2;
+    --icons-hover: #6a1b9a;
 
-    --links: #1e90ff; /* Bright blue for links */
+    --links: #6a1b9a;
 
-    --inline-code-color: #d32f2f; /* Bright red for inline code highlights */
+    --inline-code-color: #424242;
 
-    --theme-popup-bg: #ffffff; /* White for popups background */
-    --theme-popup-border: #dfe6f0; /* Light grey-blue for popups border */
-    --theme-hover: #dfe6f0; /* Light grey-blue for hover effects */
+    --theme-popup-bg: #f5f5f5;
+    --theme-popup-border: #cccccc;
+    --theme-hover: #e0e0e0;
 
-    --quote-bg: #eaf1fb; /* Very light blue for quote background */
-    --quote-border: #d0d8e8; /* Light blue-grey for quote border */
+    --quote-bg: #e8eaf6;
+    --quote-border: #c5cae9;
 
-    --warning-border: #ff8e00; /* Bright orange for warning borders */
+    --warning-border: #ffa726; /* Softer orange for warnings */
 
-    --table-border-color: #d0d8e8; /* Light blue-grey for table borders */
-    --table-header-bg: #f5f9ff; /* Very light blue for table headers */
-    --table-alternate-bg: #ffffff; /* White for alternate table rows */
+    --table-border-color: #e0e0e0;
+    --table-header-bg: #eceff1;
+    --table-alternate-bg: #fafafa;
 
-    --searchbar-border-color: #a8b8d0; /* Light blue-grey for search bar border */
-    --searchbar-bg: #ffffff; /* White for search bar background */
-    --searchbar-fg: #2c3e50; /* Dark blue-grey for search bar text */
-    --searchresults-header-fg: #5a6b7d; /* Medium blue-grey for search results header */
-    --searchresults-border-color: #a8b8d0; /* Light blue-grey for search results border */
-    --searchresults-li-bg: #eaf1fb; /* Very light blue for search results list items */
-    --search-mark-bg: #1e90ff; /* Bright blue for highlighted search text */
-
-    --color-scheme: light; /* Ensuring this theme is recognized as a light theme */
-}
-
-/* Navy Dark Theme */
-
-.navy {
-    --bg: hsl(226, 23%, 11%); /* Dark navy background */
-    --fg: #bcbdd0; /* Light greyish-blue font color for readability */
-
-    --sidebar-bg: #282d3f; /* Dark navy for sidebar background */
-    --sidebar-fg: #c8c9db; /* Light greyish-blue for sidebar text */
-    --sidebar-active: #2b79a2; /* Bright blue for active elements */
-    --sidebar-spacer: #2d334f; /* Slightly lighter navy for sidebar spacers */
-
-    --scrollbar: var(--sidebar-fg); /* Consistent with sidebar text color */
-
-    --icons: #737480; /* Grey icons */
-    --icons-hover: #b7b9cc; /* Lighter grey for icons on hover */
-
-    --links: #2b79a2; /* Bright blue for links */
-
-    --inline-code-color: #c5c8c6; /* Light grey for inline code highlights */
-
-    --theme-popup-bg: #161923; /* Very dark navy for popups background */
-    --theme-popup-border: #737480; /* Grey for popups border */
-    --theme-hover: #282e40; /* Slightly lighter navy for hover effects */
-
-    --quote-bg: hsl(226, 15%, 17%); /* Dark navy for quote background */
-    --quote-border: hsl(226, 15%, 22%); /* Slightly lighter navy for quote border */
-
-    --warning-border: #ff8e00; /* Bright orange for warning borders */
-
-    --table-border-color: hsl(226, 23%, 16%); /* Dark navy for table borders */
-    --table-header-bg: hsl(226, 23%, 31%); /* Dark navy for table headers */
-    --table-alternate-bg: hsl(226, 23%, 14%); /* Slightly lighter navy for alternate table rows */
-
-    --searchbar-border-color: #aaa; /* Light grey for search bar border */
-    --searchbar-bg: #aeaec6; /* Light greyish-blue for search bar background */
-    --searchbar-fg: #000; /* Black for search bar text */
-    --searchbar-shadow-color: #aaa; /* Light grey for shadow */
-    --searchresults-header-fg: #5f5f71; /* Dark grey for search results header */
-    --searchresults-border-color: #5c5c68; /* Dark grey for search results border */
-    --searchresults-li-bg: #242430; /* Very dark navy for search results list items */
-    --search-mark-bg: #a2cff5; /* Light blue for highlighted search text */
-
-    --color-scheme: dark; /* Ensuring this theme is recognized as a dark theme */
-}
-
-.rust {
-    --bg: hsl(60, 9%, 87%);
-    --fg: #262625;
-
-    --sidebar-bg: #3b2e2a;
-    --sidebar-fg: #c8c9db;
-    --sidebar-non-existant: #505254;
-    --sidebar-active: #e69f67;
-    --sidebar-spacer: #45373a;
-
-    --scrollbar: var(--sidebar-fg);
-
-    --icons: #737480;
-    --icons-hover: #262625;
-
-    --links: #2b79a2;
-
-    --inline-code-color: #6e6b5e;
-
-    --theme-popup-bg: #e1e1db;
-    --theme-popup-border: #b38f6b;
-    --theme-hover: #99908a;
-
-    --quote-bg: hsl(60, 5%, 75%);
-    --quote-border: hsl(60, 5%, 70%);
-
-    --warning-border: #ff8e00;
-
-    --table-border-color: hsl(60, 9%, 82%);
-    --table-header-bg: #b3a497;
-    --table-alternate-bg: hsl(60, 9%, 84%);
-
-    --searchbar-border-color: #aaa;
-    --searchbar-bg: #fafafa;
-    --searchbar-fg: #000;
-    --searchbar-shadow-color: #aaa;
-    --searchresults-header-fg: #666;
-    --searchresults-border-color: #888;
-    --searchresults-li-bg: #dec2a2;
-    --search-mark-bg: #e69f67;
+    --searchbar-border-color: #bdbdbd;
+    --searchbar-bg: #f5f5f5;
+    --searchbar-fg: #424242;
+    --searchbar-shadow-color: #eeeeee;
+    --searchresults-header-fg: #757575;
+    --searchresults-border-color: #9e9e9e;
+    --searchresults-li-bg: #eeeeee;
+    --search-mark-bg: #b3e5fc;
 
     --color-scheme: light;
 }
 
+/* Navy Theme - Professional */
+.navy {
+    --bg: #ffffff;
+    --fg: #283593; /* Deep blue for general foreground */
+
+    --sidebar-bg: #e8eaf6; /* Very light blue */
+    --sidebar-fg: #303f9f; /* Less vibrant blue */
+    --sidebar-non-existant: #cccccc;
+    --sidebar-active: #3f51b5; /* Slightly brighter blue */
+    --sidebar-spacer: #cfd8dc; /* Light blue gray */
+
+    --scrollbar: var(--sidebar-fg);
+
+    --icons: #3f51b5;
+    --icons-hover: #283593;
+
+    --links: #303f9f;
+
+    --inline-code-color: #1a237e;
+
+    --theme-popup-bg: #e8eaf6;
+    --theme-popup-border: #cccccc;
+    --theme-hover: #c5cae9;
+
+    --quote-bg: #d1d9ff; /* Very light blue */
+    --quote-border: #b0bec5;
+
+    --warning-border: #fb8c00; /* Softer orange */
+
+    --table-border-color: #cfd8dc;
+    --table-header-bg: #d6d6d6;
+    --table-alternate-bg: #eceff1;
+
+    --searchbar-border-color: #90a4ae;
+    --searchbar-bg: #e8eaf6;
+    --searchbar-fg: #283593;
+    --searchbar-shadow-color: #b0bec5;
+    --searchresults-header-fg: #607d8b;
+    --searchresults-border-color: #78909c;
+    --searchresults-li-bg: #cfd8dc;
+    --search-mark-bg: #9fa8da;
+
+    --color-scheme: dark;
+}
+
 @media (prefers-color-scheme: dark) {
     .light.no-js {
-        --bg: #16202A; /* Darker background for better contrast */
-        --fg: #C1C7D0; /* Softer foreground text color */
+        /* Adjustments to ensure the dark mode automatic switching is also professional and subtle */
+        --bg: #212121; /* Very dark gray */
+        --fg: #e0e0e0; /* Light gray text for contrast */
 
-        --sidebar-bg: #1A2634; /* Dark blue, less intense for sidebar */
-        --sidebar-fg: #C1C7D0; /* Soft light color for text in sidebar */
-        --sidebar-active: #dcb227; /* Toned-down yellow for active elements, improving readability */
-        --sidebar-spacer: #2A3340; /* Dark blue for spacers, slightly lighter than sidebar-bg */
+        --sidebar-bg: #37474f; /* Dark gray sidebar */
+        --sidebar-fg: #cfd8dc; /* Light blue-gray for text */
+        --sidebar-non-existant: #424242;
+        --sidebar-active: #546e7a; /* Muted blue */
+        --sidebar-spacer: #455a64; /* Dark blue gray */
 
-        --scrollbar: #C1C7D0; /* Matching the sidebar text color for consistency */
+        --scrollbar: var(--sidebar-fg);
 
-        --icons: #5A6978; /* Soft grey icons for less intensity */
-        --icons-hover: #C1C7D0; /* Light grey for icons on hover, matching the text color */
+        --icons: #607d8b;
+        --icons-hover: #78909c;
 
-        --links: #4A90E2; /* Softer blue for links, ensuring readability against dark backgrounds */
+        --links: #80cbc4; /* Soft teal for links */
 
-        --inline-code-color: #dcb227; /* Using the toned-down yellow for inline code highlights */
+        --inline-code-color: #e0f2f1; /* Very light teal */
 
-        --theme-popup-bg: #1A2634; /* Dark blue for popups, consistent with sidebar */
-        --theme-popup-border: #2A3340; /* Slightly lighter than popup bg for subtle contrast */
-        --theme-hover: #202D3D; /* A tad lighter than sidebar-bg for hover effects */
+        --theme-popup-bg: #263238; /* Dark */
+        --theme-popup-border: #37474f;
+        --theme-hover: #455a64;
 
-        --quote-bg: #202D3D; /* Dark blue for quote backgrounds, softer for dark mode */
-        --quote-border: #2A3340; /* Slightly lighter blue for quote borders */
+        --quote-bg: #37474f; /* Dark quote background */
+        --quote-border: #607d8b;
 
-        --table-border-color: #2A3340; /* Soft blue-grey for table borders */
-        --table-header-bg: #1A2634; /* Consistent dark blue for table headers */
-        --table-alternate-bg: #16202A; /* Slightly darker for alternate table rows, enhancing contrast */
+        --warning-border: #ff7043; /* Softer orange for warnings */
 
-        --searchbar-border-color: #4A5B6A; /* Dark grey for subtlety */
-        --searchbar-bg: #1A2634; /* Consistent with sidebar-bg */
-        --searchbar-fg: #FFFFFF; /* White for search bar text, ensuring readability */
-        --searchbar-shadow-color: #0F1419; /* Very dark shadow for depth */
-        --searchresults-header-fg: #9AA9B9; /* Light grey for visibility */
-        --searchresults-border-color: #3A4755; /* Dark grey for borders */
-        --searchresults-li-bg: #1A2634; /* Matching the sidebar and popup backgrounds */
-        --search-mark-bg: #dcb227; /* Toned-down yellow for highlighted search text */
+        --table-border-color: #546e7a;
+        --table-header-bg: #78909c;
+        --table-alternate-bg: #37474f;
+
+        --searchbar-border-color: #546e7a;
+        --searchbar-bg: #37474f;
+        --searchbar-fg: #cfd8dc;
+        --searchbar-shadow-color: #546e7a;
+        --searchresults-header-fg: #78909c;
+        --searchresults-border-color: #90a4ae;
+        --searchresults-li-bg: #455a64;
+        --search-mark-bg: #80cbc4;
     }
 }

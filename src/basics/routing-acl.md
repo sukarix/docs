@@ -14,9 +14,9 @@ detailed explanations:
 ```ini
 [routes]
 ; default route
-GET      @home : /                                 = Actions\Core\Main->execute
-GET      @docs : /docs/*                           = Actions\Core\Docs->execute
-POST|PUT @set_locale : /set-locale/@locale [ajax] = Actions\Account\SetLocale->execute
+GET      @home        : /                          = Actions\Core\Main->execute
+GET      @docs        : /docs/*                    = Actions\Core\Docs->execute
+POST|PUT @set_locale  : /set-locale/@locale [ajax] = Actions\Account\SetLocale->execute
 DELETE   @user_delete : /users/@id                 = Actions\Users\Delete->execute
 ```
 
@@ -56,9 +56,9 @@ detailed explanations:
 ```ini
 [routes]
 ; route to the main task scheduler
-GET @run_job : /cli/jobs/run        [cli] = Actions\Jobs\TaskScheduler->execute
-GET @logs_clean : /cli/logs/clean      [cli] = Sukarix\Actions\Logs\Clean->execute
-GET @sessions_clean : /cli/sessions/clean  [cli] = Sukarix\Actions\Core\SessionsClean->execute
+GET @run_job        : /cli/jobs/run       [cli] = Actions\Jobs\TaskScheduler->execute
+GET @logs_clean     : /cli/logs/clean     [cli] = Sukarix\Actions\Logs\Clean->execute
+GET @sessions_clean : /cli/sessions/clean [cli] = Sukarix\Actions\Core\SessionsClean->execute
 ```
 
 ### Explanation
@@ -98,10 +98,10 @@ policy = deny
 
 [ACCESS.rules]
 ; Routes allowed to all type of users
-deny  *      /* = *
-allow GET    @home = *
-allow GET    @docs = admin,customer
-allow        @set_locale = *
+deny  *      /*           = *
+allow GET    @home        = *
+allow GET    @docs        = admin,customer
+allow        @set_locale  = *
 allow DELETE @user_delete = admin
 ```
 
@@ -147,6 +147,3 @@ For more detailed information on F3's routing and access control mechanisms, ref
 
 - [Routing Engine](https://fatfreeframework.com/3.8/routing-engine)
 - [F3-Access on GitHub](https://github.com/xfra35/f3-access)
-
-By understanding and configuring these aspects correctly, you can ensure that your Sukarix application is secure,
-efficient, and scalable.

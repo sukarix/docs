@@ -1,3 +1,5 @@
+/* Enhanced contrast highlighting scheme adapted for "SUKARIX" theme */
+
 /*
  * An increased contrast highlighting scheme loosely based on the
  * "Base16 Atelier Dune Light" theme by Bram de Haan
@@ -6,13 +8,13 @@
  * (https://github.com/chriskempson/base16)
  */
 
-/* Comment */
+/* Comment and Quotes */
 .hljs-comment,
 .hljs-quote {
-  color: #575757;
+  color: #7d7d7d; /* Lighter grey for better readability */
 }
 
-/* Red */
+/* Variable, Tags, Names - Purple shades from logo */
 .hljs-variable,
 .hljs-template-variable,
 .hljs-attribute,
@@ -23,10 +25,10 @@
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #d70025;
+  color: #9c27b0; /* A balanced purple similar to logo */
 }
 
-/* Orange */
+/* Numbers, Built-in Functions - Deep Purple */
 .hljs-number,
 .hljs-meta,
 .hljs-built_in,
@@ -34,35 +36,49 @@
 .hljs-literal,
 .hljs-type,
 .hljs-params {
-  color: #b21e00;
+  color: #673ab7; /* Deep purple for numbers and literals */
 }
 
-/* Green */
+/* Strings, Symbols - Complementary Green */
 .hljs-string,
 .hljs-symbol,
 .hljs-bullet {
-  color: #008200;
+  color: #388e3c; /* Vivid green for strings and symbols */
 }
 
-/* Blue */
+/* Titles, Sections - Indigo */
 .hljs-title,
 .hljs-section {
-  color: #0030f2;
+  color: #3f51b5; /* Indigo for headers and sections */
 }
 
-/* Purple */
+/* Keywords, Tags - Light Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #9d00ec;
+  color: #8e24aa; /* Lighter purple from the logo */
 }
 
+/* Methods like GET, POST, DELETE */
+.hljs-method {
+  font-weight: bold;
+  color: #4a148c; /* Darker purple for HTTP methods to stand out */
+}
+
+/* Routes and parameters */
+.hljs-route {
+  color: #3f51b5; /* Indigo for the actual routes */
+  font-style: italic; /* Italicize to differentiate from other text */
+}
+
+/* Base styling */
 .hljs {
   display: block;
   overflow-x: auto;
-  background: #f6f7f6;
-  color: #000;
+  background: #fafafa; /* Very light grey background */
+  color: #4a148c; /* Dark purple for general text to ensure contrast */
 }
 
+/* Emphasis and Strong Importance */
 .hljs-emphasis {
   font-style: italic;
 }
@@ -71,12 +87,14 @@
   font-weight: bold;
 }
 
+/* Additions in code */
 .hljs-addition {
-  color: #22863a;
-  background-color: #f0fff4;
+  color: #22863a; /* Green, making it consistent with string colors */
+  background-color: #e8f5e9; /* Very light green background */
 }
 
+/* Deletions in code */
 .hljs-deletion {
-  color: #b31d28;
-  background-color: #ffeef0;
+  color: #c62828; /* Strong red for deletions */
+  background-color: #ffebee; /* Very light red background */
 }

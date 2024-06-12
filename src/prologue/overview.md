@@ -1,5 +1,7 @@
 # Sukarix
 
+<p align="center"><a href="https://sukarix.com" target="_blank"><img src="https://raw.githubusercontent.com/sukarix/docs/main/src/images/sukarix-logo.svg" width="400"></a></p>
+
 ## What is Sukarix?
 
 Sukarix is an open-source PHP framework built on top of the Fat-Free Framework (F3) designed to create enterprise-grade
@@ -47,4 +49,3 @@ Sukarix capitalizes on this robust foundation, enhancing it with additional feat
 Fat-Free Framework, the foundation of Sukarix, has a proven track record of stability and performance. It has been used
 in numerous projects over the years, demonstrating its reliability and versatility. Sukarix builds on this solid
 foundation, offering additional features and enhancements that cater to modern development needs.
-
