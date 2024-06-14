@@ -6,11 +6,12 @@ language = "en"
 multilingual = false
 src = "src"
 
+[build]
+build-dir = "book"
 
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-destination = "../public/docs"
 
 [output.html.search]
 enable = true            # enables the search feature
