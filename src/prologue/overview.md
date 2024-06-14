@@ -1,6 +1,4 @@
-# Sukarix
-
-<p align="center"><a href="https://sukarix.com" target="_blank"><img src="https://raw.githubusercontent.com/sukarix/docs/main/src/images/sukarix-logo.svg" width="400"></a></p>
+<p align="center" style="padding: 50px;"><a href="https://sukarix.com" target="_blank"><img src="https://raw.githubusercontent.com/sukarix/docs/main/src/images/sukarix-logo.svg" width="400"></a></p>
 
 ## What is Sukarix?
 
