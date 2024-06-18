@@ -7,8 +7,17 @@ To set up your Sukarix application with Vagrant follow these steps:
 Run the following command to create a new Sukarix project using Composer:
 
 ```sh
-composer create-project --stability=dev  sukarix/application
+composer create-project sukarix/application
 ```
+
+~~~admonish tip title="Using development version"
+It is also possible to create a new Sukarix project using the current development version of the framework by adding
+<span style="color: darkgoldenrod">--stability=dev</span> to the command.  
+
+```sh
+composer create-project --stability=dev sukarix/application
+```
+~~~
 
 ## Step 2: Navigate to the project directory
 
@@ -49,5 +58,5 @@ After running `vagrant up`, you can access your application at `http://sukarix.t
 the site, ensure your system's hosts file includes the correct entry, typically something like:
 
 ```plaintext
-192.168.50.4  sukarix.test
+192.168.56.100  sukarix.test
 ```

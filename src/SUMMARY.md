@@ -27,6 +27,7 @@
 - [Data Validation](./basics/data-validation.md)
 - [Session](./basics/session.md)
 - [Logging](./basics/logging.md)
+- [Debugging](./basics/debugging.md)
 
 # Advanced Topics
 - [Emails]()
@@ -34,6 +35,8 @@
 - [Translation / i18n]()
 - [Behaviours]()
 - [CRON Jobs]()
+- [Events]()
+- [Error Handling]()
 
 # Front-end
 - [Template Engine]()
@@ -44,18 +47,27 @@
 - [Users]()
 - [Authentication]()
 - [Authorisation]()
-- [Passwords]()
-- [CSR]()
+- [CSRF]()
 
 # Helpers
 - [Assets]()
+- [Flash]()
+- [HTML]()
 
-# Security
+# Packages
+- [Statera]()
+
+# Utilities
+- [CLI toolbox]()
 
 # Testing
+- [Getting Started]()
 
 # Production
+- [Deployment]()
+- [Performance]()
 
------------
-
+# Community
+- [Contribution Guide](./community/contributing.md)
+- [Code of Conduct](./community/code-of-conduct.md)
 - [Release Notes](./release-notes.md)

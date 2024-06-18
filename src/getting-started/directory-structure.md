@@ -80,7 +80,7 @@ Directory for storing application data files.
 
 Contains database-related files and directories.
 
-- **data**: Directory for database dumps or backups.
+- **data**: Directory for storing the SQLite database files.
 - **migrations**: Directory for database migration scripts.
 - **seeds**: Directory for database seed files.
 

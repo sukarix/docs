@@ -1,10 +1,9 @@
 <p align="center" style="padding: 50px;"><a href="https://sukarix.com" target="_blank"><img src="https://raw.githubusercontent.com/sukarix/docs/main/src/images/sukarix-logo.svg" width="400"></a></p>
 
 **Sukarix** is an open-source modern PHP framework built to empower developers by facilitating rapid development of web
-and CLI
-applications with a focus on simplicity and efficiency. Born out of the need for a streamlined, performance-oriented
-framework, Sukarix builds on top of the Fat-Free Framework to offer a solid foundation that is both lightweight and
-feature-rich.
+and CLI applications with a focus on simplicity and efficiency. Born out of the need for a streamlined,
+performance-oriented framework, Sukarix builds on top of the Fat-Free Framework to offer a solid foundation that is both
+lightweight and feature-rich.
 
 ## Philosophy
 
@@ -28,30 +27,31 @@ robust, scalable applications. Here’s what defines our approach:
       adjustments to the framework itself, simplifying maintenance and ensuring long-term compatibility.
 
 4. **_Rich in features_**
-   - **Best-in-Class Libraries:** Sukarix incorporates the best PHP libraries available from the open-source community,
-     offering enterprise-level features that meet the demands of complex business applications.
+    - **Best-in-Class Libraries:** Sukarix incorporates the best PHP libraries available from the open-source community,
+      offering enterprise-level features that meet the demands of complex business applications.
 
 5. **_Efficiency first_**
-   - **Simplicity and Performance:** When multiple approaches exist for a feature, we prioritise using the Fat-Free
-     Framework's methods for their proven efficiency. Features are designed and continually refined to ensure the most
-     performant outcomes while maintaining simplicity.
+    - **Simplicity and Performance:** When multiple approaches exist for a feature, we prioritise using the Fat-Free
+      Framework's methods for their proven efficiency. Features are designed and continually refined to ensure the most
+      performant outcomes while maintaining simplicity.
 
 6. **_Flexibility in approach_**
-   - **Multiple ways to succeed:** While Sukarix standardises the use of the Fat-Free Framework (F3), it remains
-     flexible, allowing developers to utilize F3’s core features, its plugins, and a range of open-source libraries to
-     craft alternative solutions. This approach provides developers the freedom to choose or create the method that
-     best fits the specific requirements of their projects.
+    - **Multiple ways to succeed:** While Sukarix standardises the use of the Fat-Free Framework (F3), it remains
+      flexible, allowing developers to utilize F3’s core features, its plugins, and a range of open-source libraries to
+      craft alternative solutions. This approach provides developers the freedom to choose or create the method that
+      best fits the specific requirements of their projects.
 
 7. **_Smart defaults_**
-   - **Convention Over Configuration:** Sukarix is built on the principle of "It just works!" By promoting conventions
-     over configurations, the framework provides smart defaults that streamline development tasks, enabling developers
-     to focus more on innovation and less on setup.
+    - **Convention Over Configuration:** Sukarix is built on the principle of "It just works!" By promoting conventions
+      over configurations, the framework provides smart defaults that streamline development tasks, enabling developers
+      to focus more on innovation and less on setup.
 
 8. **_Testability_**
-   - **Comprehensive Testing:** Sukarix is equipped with built-in tools for both CLI and browser-based unit testing,
-     ensuring the reliability and performance of applications through thorough testing. While the framework does not depend
-     on PHPUnit, developers have the flexibility to integrate it or any other testing frameworks into their projects as
-     needed.
+    - **Comprehensive Testing:** Sukarix is equipped with built-in tools for both CLI and browser-based unit testing,
+      ensuring the reliability and performance of applications through thorough testing. While the framework does not
+      depend
+      on PHPUnit, developers have the flexibility to integrate it or any other testing frameworks into their projects as
+      needed.
 
 ## Features
 
