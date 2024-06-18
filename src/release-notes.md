@@ -1,5 +1,9 @@
 # Release Notes
 
+## Support Policy
+
+Sukarix is currently supported for PHP 8.2+.
+
 ## Released versions
 
 - [v0.1.0 - 2024-06-14](#v010)
