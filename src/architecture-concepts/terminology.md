@@ -17,8 +17,8 @@ requests within the application, typically mapped to routes and executed to perf
 
 ## Bootstrapping
 
-The application initialization phase where the framework loads configurations, sets up the environment, and prepares the
-application for handling requests.
+The application initialisation phase where the framework, akin to the kernel in other frameworks, loads configurations,
+sets up the environment, and prepares the application for handling requests.
 
 ## Environment
 
