@@ -25,7 +25,7 @@ Example Sukarix framework variables:
 `boolean` &nbsp; &nbsp; **Default:** `TRUE` in production configuration
 
 Turns JavaScript minification on or off. Should be environment dependant.
-~~~~
+
 ### MINIFY_CSS
 
 `boolean` &nbsp; &nbsp; **Default in template application:** `TRUE` in production configuration

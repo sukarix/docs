@@ -22,7 +22,7 @@ for Phinx is available [here](https://book.cakephp.org/phinx/0/en/intro.html).
 The `Model` class provides a structured way to access data using Cortex ORM. It includes methods for pagination, data
 conversion, and change detection, ensuring robust and efficient data handling.
 
-```admonish abstract title="<u>Sukarix Convention:</u> Model timestapms"
+```admonish abstract title="<u>Sukarix Convention:</u> Model timestamps"
 The `Model` class follows conventions for managing timestamps:
 
 - **created_on:** Automatically set when a record is created.
