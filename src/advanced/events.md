@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-## Overview
+## Introduction
 
 In Sukarix, events are managed using the `Sukarix\Behaviours\HasEvents` trait. This allows any class to emit and handle events throughout the application using the Sugar Events system integrated with the PHP Fat-Free Framework.
 

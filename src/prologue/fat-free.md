@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-## Overview
+## Introduction
 
 Fat-Free Framework (F3) is a powerful yet lightweight PHP framework designed to help developers build dynamic web
 applications quickly and efficiently. One of the core concepts in F3 is the "Hive," which is a centralized place where

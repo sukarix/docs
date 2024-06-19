@@ -9,6 +9,7 @@
 - [Fat-Free Framework](./prologue/fat-free.md)
 
 # Getting started
+
 - [Installation](./getting-started/installation.md)
 - [Configuration](./getting-started/configuration.md)
 - [Directory Structure](./getting-started/directory-structure.md)
@@ -30,6 +31,7 @@
 - [Debugging](./basics/debugging.md)
 
 # Advanced Topics
+
 - [Emails](./advanced/emails.md)
 - [Notifications](./advanced/notifications.md)
 - [Translation / i18n](./advanced/i18n.md)
@@ -39,35 +41,36 @@
 - [Error Handling](./advanced/error-handling.md)
 
 # Front-end
-- [Template Engine]()
-- [Assets Management]()
-- [JavaScript]()
+
+- [Template Engine](./frontend/template-engine.md)
+- [Assets Management](./frontend/assets-management.md)
+- [JavaScript](./frontend/javascript.md)
 
 # Security
-- [Users]()
-- [Authentication]()
-- [Authorisation]()
-- [CSRF]()
 
-# Helpers
-- [Assets]()
-- [Flash]()
-- [HTML]()
+- [Users](./security/users.md)
+- [Authentication](./security/authentication.md)
+- [Authorisation](./security/authorisation.md)
+- [CSRF](./security/csrf.md)
 
 # Packages
-- [Statera]()
+
+- [Statera](./packages/statera.md)
 
 # Utilities
-- [CLI toolbox]()
+
+- [CLI toolbox](./utilities/cli-toolbox.md)
 
 # Testing
-- [Getting Started]()
+
+- [Getting Started](./testing/introduction.md)
 
 # Production
-- [Deployment]()
-- [Performance]()
+
+- [Deployment](./production/deployment.md)
 
 # Community
+
 - [Contribution Guide](./community/contributing.md)
 - [Code of Conduct](./community/code-of-conduct.md)
 - [Release Notes](./release-notes.md)

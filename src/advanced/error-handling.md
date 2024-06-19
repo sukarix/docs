@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-## Overview
+## Introduction
 
 In Sukarix, error handling is managed by a global error handler that can be overridden in the `Application` class. The
 default implementation uses `Tracy\Debugger` for managing errors and handling fatal exceptions. The global exception

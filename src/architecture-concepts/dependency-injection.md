@@ -2,12 +2,12 @@
 
 <!-- toc -->
 
-### Overview
+## Overview
 
 Dependency Injection in Sukarix is facilitated through the singleton class `Injector::instance()->get('access')`. This
 method allows for easy and efficient management of dependencies within your application.
 
-### Example Usage
+## Example Usage
 
 In this example, `access` is the default ACL Middleware tied to `f3-access`:
 
@@ -15,7 +15,7 @@ In this example, `access` is the default ACL Middleware tied to `f3-access`:
 $access = Injector::instance()->get('access');
 ```
 
-### Configuration & default dependencies
+## Configuration & default dependencies
 
 These default classes can be easily changed or overridden by updating the `classes.ini` file. The default configuration
 is in the table below:
@@ -32,17 +32,17 @@ is in the table below:
 | `template` | \Template                     |
 | `html`     | Sukarix\Helpers\HTML          |
 
-### Creating Injectable Singletons
+## Creating Injectable Singletons
 
 For classes that should be singletons with behaviours, they must extend the `Sukarix\Core\Tailored` class. This ensures
 the framework can automatically integrate their behaviours. More details on these behaviors can be found in the
 Behaviours section of the documentation.
 
-```admonish warning title="Instantiating an injectable singleton object"
+```admonish info title="Instantiating an injectable singleton object"
 There is no need to manually instantiate the injected object, Sukarix will do it for you.
 ```
 
-### Storing DI Classes
+## Storing DI Classes
 
 The F3 `\Registry` class is used to store these dependency-injected classes, ensuring they are easily accessible
 throughout your application.
