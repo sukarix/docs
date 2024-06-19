@@ -60,7 +60,7 @@ Here is an overview of the default settings found in `default.ini`:
     - `log.session`: Log session queries.
     - `session.table`: Table for session storage.
     - `pagination.limit`: Default pagination limit.
-    - `view.default`: Default view to render.
+    - `template.default`: Default view to render.
     - `log.keep`: Log retention period.
     - `server.host`: Host for command-line actions.
     - `error.channel`: Error notification channel.

@@ -51,7 +51,7 @@ If the server hostname ends with `.test` the `application.environment` variable 
 to `development`. 
 ```
 
-### view.default
+### template.default
 
 `string` &nbsp; &nbsp; **Default in template application:** `website`
 
