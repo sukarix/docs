@@ -11,7 +11,7 @@ for later usage in error display. Here is an example of data validation in a PHP
 use Respect\Validation\Validator;
 use Sukarix\Enum\UserRole;
 use Sukarix\Validation\DataValidator;
-~~~~
+
 public function save($f3, $params): void
 {
     $v = new DataValidator();
