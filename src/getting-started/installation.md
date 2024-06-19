@@ -1,5 +1,9 @@
 # Instructions for a new Sukarix application
 
+<!-- toc -->
+
+## Introduction
+
 To set up your Sukarix application with Vagrant follow these steps:
 
 ## Step 1: Create a new Sukarix project

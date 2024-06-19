@@ -1,5 +1,8 @@
 # Debugging
 
+<!-- toc -->
+
+## Introduction
 Sukarix uses the Tracy library for debugging. Tracy offers powerful tools to help you debug your applications
 efficiently.
 

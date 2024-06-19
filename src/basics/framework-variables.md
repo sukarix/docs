@@ -1,5 +1,7 @@
 # Framework Variables
 
+<!-- toc -->
+
 ## Fat Free Framework Variables
 
 Detailed information on Fat-Free Framework variables can be

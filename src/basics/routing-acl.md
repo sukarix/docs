@@ -1,5 +1,9 @@
 # Routing and Access Control
 
+<!-- toc -->
+
+## Introduction
+
 Sukarix leverages the powerful routing and access control capabilities of the Fat-Free Framework (F3) to manage web and
 CLI application routes. The configuration for routing and access control is handled through `routes.ini`
 and `access.ini` for web applications, and `routes-cli.ini` and `access-cli.ini` for CLI applications.

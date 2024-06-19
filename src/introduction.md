@@ -5,6 +5,10 @@ and CLI applications with a focus on simplicity and efficiency. Born out of the 
 performance-oriented framework, Sukarix builds on top of the Fat-Free Framework to offer a solid foundation that is both
 lightweight and feature-rich.
 
+# Introduction
+
+<!-- toc -->
+
 ## Philosophy
 
 Sukarix Framework embraces a philosophy built on principles designed to enhance your development process and deliver
@@ -55,8 +59,8 @@ robust, scalable applications. Here’s what defines our approach:
 
 ## Features
 
-- **Elegant Routing System**: Define your routes elegantly and intuitively, ensuring that your application logic is
-  separated from the routing layer.
+- **Intuitive Routing System**: Define your routes intuitively, ensuring that your application logic is separated from
+  the routing layer and stay human-readable.
 - **Powerful Templating Engine**: Comes with a powerful templating engine that facilitates creating dynamic content in a
   clean and manageable way.
 - **Built-in Caching Solutions**: Reduce load times and enhance application performance with advanced caching

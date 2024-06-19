@@ -1,0 +1,73 @@
+/* General styling for headers and lists */
+h1 + ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Styling for nested lists */
+h1 + ul ul {
+    list-style: none; /* Ensure nested lists also have no bullets */
+    padding-left: 20px;
+}
+
+/* Styling for list items in the summary */
+h1 + ul li a::before {
+    content: "#";
+    margin-right: 10px;
+    color: #5B2C90; /* Dark purple from the logo */
+    font-weight: bold;
+}
+
+/* Bold styling for level 1 items */
+h1 + ul > li > a,
+h1 + ul > li > a:link,
+h1 + ul > li > a:visited,
+h1 + ul > li > a:hover,
+h1 + ul > li > a:active {
+    color: #5B2C90 !important; /* Dark purple from the logo */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for nested list items */
+h1 + ul ul li a::before {
+    content: "#";
+    margin-right: 10px;
+    color: #5B2C90;
+    font-weight: normal;
+}
+
+/* Ensure nested links are also styled */
+h1 + ul ul li a,
+h1 + ul ul li a:link,
+h1 + ul ul li a:visited,
+h1 + ul ul li a:hover,
+h1 + ul ul li a:active {
+    color: #5B2C90 !important; /* Dark purple from the logo */
+    font-weight: normal;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for headers */
+h2, h3, h4 {
+    position: relative;
+}
+
+h2::before, h3::before, h4::before {
+    content: "#";
+    position: absolute;
+    left: -30px;
+    font-weight: bold;
+}
+
+h2::before {
+    color: #5B2C90;
+}
+
+h3::before {
+    color: #9C2AA0;
+}
+
+h4::before {
+    color: #BB408E;
+}

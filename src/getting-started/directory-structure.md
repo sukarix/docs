@@ -1,5 +1,9 @@
 # Directory Structure
 
+<!-- toc -->
+
+## Structure
+
 Understanding the directory structure of a Sukarix application is crucial for effective development and maintenance.
 Below is an overview of the typical directory layout and the purpose of each directory and file.
 

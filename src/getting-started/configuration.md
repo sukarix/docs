@@ -1,5 +1,9 @@
 # Configuration
 
+<!-- toc -->
+
+# Configuration Files
+
 Sukarix is configured via `.ini` files by default, allowing for clear and manageable settings. The configuration load
 order ensures that settings can be overridden based on the environment.
 

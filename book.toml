@@ -12,7 +12,7 @@ build-dir = "book"
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-additional-css = ["./mdbook-admonish.css", "./theme/css/mdbook-admonish.css"]
+additional-css = ["./mdbook-admonish.css", "./theme/css/mdbook-admonish.css", "./theme/css/sukarix.css"]
 
 [output.html.search]
 enable = true            # enables the search feature
@@ -37,3 +37,7 @@ level = 0         # the depth to start folding
 [preprocessor.admonish]
 command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]

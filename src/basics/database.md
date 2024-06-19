@@ -1,5 +1,7 @@
 # Databases Management
 
+<!-- toc -->
+
 ### Database Configuration
 
 For configuring database access, the framework follows the guidelines outlined by

@@ -1,5 +1,7 @@
 # Terminology
 
+<!-- toc -->
+
 ## Hive
 
 A central place where Fat-Free Framework (F3) stores and manages application data, including configuration settings,

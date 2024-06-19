@@ -1,5 +1,9 @@
 # Application Lifecycle
 
+<!-- toc -->
+
+## Entry-point
+
 The entry point for a Sukarix application is `public/index.php`.
 
 This is where initial detection happens to determine if unit tests need to be run in the browser, a process that will be

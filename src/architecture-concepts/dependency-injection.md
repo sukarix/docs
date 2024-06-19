@@ -1,4 +1,6 @@
-### Dependency Injection Documentation
+# Dependency Injection
+
+<!-- toc -->
 
 ### Overview
 

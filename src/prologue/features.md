@@ -1,5 +1,7 @@
 # Features
 
+<!-- toc -->
+
 ## Introduction
 
 Sukarix builds upon the robust and lightweight foundation of the Fat-Free Framework (F3), a micro-framework known for
@@ -11,33 +13,33 @@ scalability, and offer a more comprehensive development experience for building 
 ## Feature List
 
 | Feature Name                               | F3 Native | Sukarix Replacement (Library) |
-|--------------------------------------------|-----------|------------------------------|
-| Fast and clean template engine             | Yes       | -                            |
-| Unit testing toolkit (Web UI & CLI)        | Yes       | PHPUnit Code Coverage        |
-| Database-managed sessions                  | Yes       | -                            |
-| Markdown-to-HTML converter                 | Yes       | -                            |
-| Atom/RSS feed reader                       | Yes       | -                            |
-| Image processor                            | Yes       | -                            |
-| Geodata handler                            | Yes       | -                            |
-| On-the-fly Javascript/CSS compressor       | Yes       | Matthias Mullie Minify       |
-| OpenID (consumer)                          | Yes       | -                            |
-| Custom logger                              | Yes       | Monolog                      |
-| Basket/Shopping cart                       | Yes       | -                            |
-| Pingback server/consumer                   | Yes       | -                            |
-| Unicode-aware string functions             | Yes       | -                            |
-| SMTP over SSL/TLS                          | Yes       | F3 Mailer                    |
-| Tools for communicating with other servers | Yes       | -                            |
-| Data Validation                            | Yes       | Respect Validation           |
-| ORM                                        | -         | F3 Cortex                    |
-| ACL                                        | -         | F3 Access                    |
-| Event Dispatching                          | -         | F3 Events                    |
-| Messages to chat platforms                 | -         | Guanguans Notify             |
-| Database Migrations                        | -         | Phinx                        |
-| Debugging & Global Event Catching          | -         | Tracy                        |
+|--------------------------------------------|-----------|-------------------------------|
+| Fast and clean template engine             | Yes       | -                             |
+| Unit testing toolkit (Web UI & CLI)        | Yes       | PHPUnit Code Coverage         |
+| Database-managed sessions                  | Yes       | -                             |
+| Markdown-to-HTML converter                 | Yes       | -                             |
+| Atom/RSS feed reader                       | Yes       | -                             |
+| Image processor                            | Yes       | -                             |
+| Geodata handler                            | Yes       | -                             |
+| On-the-fly Javascript/CSS compressor       | Yes       | Matthias Mullie Minify        |
+| OpenID (consumer)                          | Yes       | -                             |
+| Custom logger                              | Yes       | Monolog                       |
+| Basket/Shopping cart                       | Yes       | -                             |
+| Pingback server/consumer                   | Yes       | -                             |
+| Unicode-aware string functions             | Yes       | -                             |
+| SMTP over SSL/TLS                          | Yes       | F3 Mailer                     |
+| Tools for communicating with other servers | Yes       | -                             |
+| Data Validation                            | Yes       | Respect Validation            |
+| ORM                                        | -         | F3 Cortex                     |
+| ACL                                        | -         | F3 Access                     |
+| Event Dispatching                          | -         | F3 Events                     |
+| Messages to chat platforms                 | -         | Guanguans Notify              |
+| Database Migrations                        | -         | Phinx                         |
+| Debugging & Global Event Catching          | -         | Tracy                         |
 | Cron job scheduler                         | -         | peppeocchi/php-cron-scheduler |
-| Dependency Injection                       | -         | Sukarix                      |
-| Inversion of Control                       | -         | Sukarix                      |
-| Bash tool                                  | -         | Sukarix (coming...)          |
+| Dependency Injection                       | -         | Sukarix                       |
+| Inversion of Control                       | -         | Sukarix                       |
+| Bash tool                                  | -         | Sukarix (coming...)           |
 
 ### Description of Features
 

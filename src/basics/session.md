@@ -1,4 +1,8 @@
-# Session Management
+# Session
+
+<!-- toc -->
+
+## Session Management
 
 Session handler documentation can be found [here](https://fatfreeframework.com/3.8/session).
 

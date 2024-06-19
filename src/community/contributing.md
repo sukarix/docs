@@ -1,8 +1,10 @@
 # Contribution Guide
 
-We welcome contributions from the community! Here’s how you can help:
+<!-- toc -->
 
 ## How to Contribute
+
+We welcome contributions from the community! Here’s how you can help.
 
 1. **Fork the Repository**: Create a fork of the Sukarix repository.
 2. **Create a Branch**: Make a new branch for your feature or bugfix.
