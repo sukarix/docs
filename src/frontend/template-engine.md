@@ -40,9 +40,10 @@ the process of managing assets.
 
 - **JavaScript Directive:**
   ```html
-  <js src="path/to/script.js"></js>
+  <js src="path/to/script.js" type="module"></js>
   ```
-  This directive is used to include JavaScript files in your view.
+  This directive is used to include JavaScript files in your view. You can pass an optional `type` attribute, such
+  as `"module"`. If the `type` attribute is not provided, `"text/javascript"` will be chosen by default.
 
 - **CSS Directive:**
   ```html
@@ -55,6 +56,9 @@ The existence of the specified file is validated when the directive attempts to 
 an exception will be thrown. This ensures that developers can handle missing files during the development phase
 before deploying to production.
 ```
+
+By utilizing these custom directives, Sukarix ensures that assets are managed efficiently and that any issues with
+missing files are caught early in the development cycle.
 
 ## F3 Template Directives
 

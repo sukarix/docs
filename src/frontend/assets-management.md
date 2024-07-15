@@ -37,24 +37,9 @@ The `Assets` class can also call JavaScript functions and initialize them. Examp
 
 <script>
     jQuery(document).ready(function () {
-        {
-            { \Sukarix\Helpers\Assets::instance()
-            ->
-                currentJsLocale()
-            }
-        }
-        {
-            { \Sukarix\Helpers\Assets::instance()
-            ->
-                setUserRole()
-            }
-        }
-        {
-            { \Sukarix\Helpers\Assets::instance()
-            ->
-                initJsClasses()
-            }
-        }
+        {{ \Sukarix\Helpers\Assets::instance()->currentJsLocale() }}
+        {{ \Sukarix\Helpers\Assets::instance()->setUserRole() }}
+        {{ \Sukarix\Helpers\Assets::instance()->initJsClasses() }}
     });
 </script>
 ```
