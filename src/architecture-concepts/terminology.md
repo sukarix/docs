@@ -19,7 +19,7 @@ requests within the application, typically mapped to routes and executed to perf
 
 ## Bootstrapping
 
-The application initialisation phase where the framework, akin to the kernel in other frameworks, loads configurations,
+The application initialization phase where the framework, akin to the kernel in other frameworks, loads configurations,
 sets up the environment, and prepares the application for handling requests.
 
 ## Environment
@@ -34,7 +34,7 @@ file. It manages dependencies and ensures that required services are available t
 
 ## Processor
 
-A component responsible for applying behaviors of traits to classes. It ensures that specific functionalities or
+A component responsible for applying behaviors or traits to classes. It ensures that specific functionalities or
 attributes are consistently applied across relevant classes.
 
 ## Session
@@ -85,7 +85,20 @@ features for interacting with the database.
 The component responsible for sending notifications to third parties, such as Zulip, Slack, or email, ensuring that
 important events are communicated effectively.
 
-## DataValidator
+## Constraints
 
 The class responsible for validating data inputs within the application. It ensures that data conforms to specified
 rules and constraints before processing.
+
+## Tailored
+
+The `Tailored` class is a singleton that extends F3's `\Prefab`, ensuring only one instance of the class exists. It has
+the ability to glue trait behaviour to a class while maintaining its singleton nature and integrating it into the
+dependency injection registry.
+
+## Template Directive
+
+Directives used within F3 templates to insert dynamic content, control flow, and manage template inheritance. These
+directives allow developers to create flexible and reusable templates for rendering views. For a detailed list and
+explanation of template directives, refer to
+the [F3 Quick Reference](https://fatfreeframework.com/3.8/quick-reference#TemplateDirectives).

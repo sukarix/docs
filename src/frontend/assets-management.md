@@ -1,4 +1,4 @@
-### Assets
+# Assets
 
 <!-- toc -->
 
@@ -6,6 +6,19 @@
 
 Sukarix uses the `Assets` class to manage and render CSS and JavaScript files efficiently. By default, it looks for CSS
 files under `public/css` and JavaScript files under `public/js`.
+
+## Default Storage Locations
+
+- **CSS Files**: `public/css`
+- **JavaScript Files**: `public/js`
+- **Minified Files**: `public/minified`
+
+The `Assets` class automatically handles the minification of CSS and JS files and places the minified versions in
+the `public/minified` directory.
+
+```admonish tip title="Default Storage Locations"
+By default, CSS files are stored in `public/css`, JavaScript files in `public/js`, and minified files in `public/minified`.
+```
 
 ## Rendering Groups
 
@@ -20,26 +33,44 @@ your template, use:
 
 The `Assets` class can also call JavaScript functions and initialize them. Example:
 
+```html
+
 <script>
     jQuery(document).ready(function () {
-        {{ \Sukarix\Helpers\Assets::instance()->currentJsLocale() }}
-        {{ \Sukarix\Helpers\Assets::instance()->setUserRole() }}
-        {{ \Sukarix\Helpers\Assets::instance()->initJsClasses() }}
+        {
+            { \Sukarix\Helpers\Assets::instance()
+            ->
+                currentJsLocale()
+            }
+        }
+        {
+            { \Sukarix\Helpers\Assets::instance()
+            ->
+                setUserRole()
+            }
+        }
+        {
+            { \Sukarix\Helpers\Assets::instance()
+            ->
+                initJsClasses()
+            }
+        }
     });
 </script>
-
-
-```admonish tip
-The `Assets` class is responsible for minifying CSS and JS files and placing them in the `public/minified` directory.
 ```
 
 ## Example Usage
 
-### Adding CSS and JS Files
+### Adding CSS and JS Files in a View
+
+In your action, you can add CSS and JS files like this:
 
 ```php
-\Sukarix\Helpers\Assets::instance()->addCss('style.css');
-\Sukarix\Helpers\Assets::instance()->addJs('script.js');
+$this->assets->addJs('core.js');
+$this->assets->addJs('core/servers.js');
+$this->assets->addJs('vendors/datatables.min.js');
+$this->assets->addCss('datatables.min.css');
+$f3->push('init.js', 'Servers');
 ```
 
 ### Rendering Assets
@@ -56,3 +87,5 @@ To render assets in the `footer` group:
 {{ \Sukarix\Helpers\Assets::instance()->renderGroup('footer') }}
 ```
 
+By using these functionalities, Sukarix ensures efficient management and rendering of assets, enhancing the performance
+and maintainability of your web application.

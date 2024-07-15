@@ -25,6 +25,7 @@
 - [Routing Engine & ACL](./basics/routing-acl.md)
 - [Framework Variables](./basics/framework-variables.md)
 - [Databases & Cortex](./basics/database.md)
+- [File Upload](./basics/file-upload.md)
 - [Data Validation](./basics/data-validation.md)
 - [Session](./basics/session.md)
 - [Logging](./basics/logging.md)

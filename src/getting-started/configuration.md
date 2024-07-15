@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-# Configuration Files
+## Configuration Files
 
 Sukarix is configured via `.ini` files by default, allowing for clear and manageable settings. The configuration load
 order ensures that settings can be overridden based on the environment.
@@ -15,6 +15,7 @@ order ensures that settings can be overridden based on the environment.
 
 2. **Additional Configurations:**
     - Files listed in the `CONFIGS` variable, e.g., `smtp`, `notifications`, `upload`. No need to add `.ini` extension.
+    - `config/validation.ini` (loaded only when a data validation request is initiated).
 
 3. **Environment-Specific Configuration:**
     - `config/config-<environment>.ini`
@@ -26,6 +27,10 @@ order ensures that settings can be overridden based on the environment.
 
 ```admonish info title="Dynamic reconfiguration"
 Configuration changes are automatically reloaded, meaning there is no need to restart any service.
+```
+
+```admonish tip title="Automatic .ini Extension Handling"
+When specifying additional configuration files in the `CONFIGS` variable, you do not need to include the `.ini` extension. Sukarix will automatically append `.ini` to the file name during the loading process. For example, if you set `CONFIGS=notifications,smtp,upload`, Sukarix will load `config/notifications.ini`, `config/smtp.ini`, and `config/upload.ini`.
 ```
 
 ## Environment Overrides
@@ -64,3 +69,7 @@ Here is an overview of the default settings found in `default.ini`:
     - `log.keep`: Log retention period.
     - `server.host`: Host for command-line actions.
     - `error.channel`: Error notification channel.
+
+- **Security:**
+    - `csrf.enabled`: Enable or disable CSRF protection.
+    - `csrf.expiry`: CSRF token expiry time in seconds.

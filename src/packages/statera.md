@@ -28,4 +28,3 @@ assertions to verify the expected behavior of the code under test.
 ## Running Tests
 
 Statera can run tests in both Web and CLI modes, providing detailed coverage reports.
-~~~~

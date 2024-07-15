@@ -29,9 +29,10 @@ scalability, and offer a more comprehensive development experience for building 
 | Unicode-aware string functions             | Yes       | -                             |
 | SMTP over SSL/TLS                          | Yes       | F3 Mailer                     |
 | Tools for communicating with other servers | Yes       | -                             |
-| Data Validation                            | Yes       | Respect Validation            |
+| Data Validation                            | Yes       | Sukarix extends F3            |
 | ORM                                        | -         | F3 Cortex                     |
 | ACL                                        | -         | F3 Access                     |
+| Multi-language                             | -         | F3 Multilang                  |
 | Event Dispatching                          | -         | F3 Events                     |
 | Messages to chat platforms                 | -         | Guanguans Notify              |
 | Database Migrations                        | -         | Phinx                         |
@@ -63,10 +64,12 @@ scalability, and offer a more comprehensive development experience for building 
 - **SMTP over SSL/TLS**: Securely sends emails using SMTP with SSL/TLS encryption, enhancing email security.
 - **Tools for communicating with other servers**: Provides utilities for making HTTP requests and interacting with
   external APIs.
-- **Data Validation**: Validates input data using Respect Validation, ensuring that data conforms to specified rules and
-  constraints before processing.
+- **Data Validation**: Sukarix extends F3 to validate input data, ensuring it meets specified rules and constraints
+  before processing.
 - **ORM**: Uses F3 Cortex for object-relational mapping, simplifying database interactions.
 - **ACL**: Manages access control using F3 Access, enforcing permissions and roles.
+- **Multi-language**: Supports multiple languages using F3 Multilang, allowing for easy localisation of content adn
+  routes.
 - **Event Dispatching**: Handles event management using F3 Events, allowing for flexible and decoupled event-driven
   architecture.
 - **Messages to chat platforms**: Sends notifications to chat platforms like Zulip and Slack using Guanguans Notify.
