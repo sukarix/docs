@@ -38,7 +38,7 @@ project or its community.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team
-at [contact@riadvice.tn]. All complaints will be reviewed and investigated and will result in a response that is deemed
+at [contact@riadvice.com]. All complaints will be reviewed and investigated and will result in a response that is deemed
 necessary and appropriate to the circumstances.
 
 ## Attribution
