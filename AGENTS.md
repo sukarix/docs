@@ -4,10 +4,8 @@ mdBook documentation. Code examples must match actual framework code.
 
 ## Commits
 
-Unitary commits. Author: Ghazi Triki. Co-authored with Devin.
+Unitary commits. Author: Ghazi Triki. No co-author trailers, no tool attribution.
 
 ```
 <description>
-
-Co-Authored-By: Devin
 ```
