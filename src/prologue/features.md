@@ -15,7 +15,7 @@ scalability, and offer a more comprehensive development experience for building 
 | Feature Name                               | F3 Native | Sukarix Replacement (Library) |
 |--------------------------------------------|-----------|-------------------------------|
 | Fast and clean template engine             | Yes       | -                             |
-| Unit testing toolkit (Web UI & CLI)        | Yes       | PHPUnit Code Coverage         |
+| Unit testing toolkit (Web UI & CLI)        | Yes       | Statera                       |
 | Database-managed sessions                  | Yes       | -                             |
 | Markdown-to-HTML converter                 | Yes       | -                             |
 | Atom/RSS feed reader                       | Yes       | -                             |
@@ -47,7 +47,8 @@ scalability, and offer a more comprehensive development experience for building 
 - **Fast and clean template engine**: Provides a lightweight and efficient templating system that allows for easy
   creation of dynamic web pages.
 - **Unit testing toolkit (Web UI & CLI)**: Integrated tools for unit testing both web interfaces and command-line
-  interfaces, ensuring comprehensive code coverage and reliability.
+  interfaces, ensuring comprehensive code coverage and reliability. Powered by [Statera](../packages/statera.md), the
+  Sukarix testing kit built on top of the Fat-Free Framework's `Test` class.
 - **Database-managed sessions**: Manages user sessions through the database, enhancing security and scalability.
 - **Markdown-to-HTML converter**: Converts Markdown syntax into HTML, facilitating easy content creation and management.
 - **Atom/RSS feed reader**: Parses and reads Atom and RSS feeds, allowing for integration with external content sources.
