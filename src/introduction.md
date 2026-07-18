@@ -52,10 +52,10 @@ robust, scalable applications. Here’s what defines our approach:
 
 8. **_Testability_**
     - **Comprehensive Testing:** Sukarix is equipped with built-in tools for both CLI and browser-based unit testing,
-      ensuring the reliability and performance of applications through thorough testing. While the framework does not
-      depend
-      on PHPUnit, developers have the flexibility to integrate it or any other testing frameworks into their projects as
-      needed.
+      ensuring the reliability and performance of applications through thorough testing. The framework ships with
+      [Statera](../packages/statera.md), its own testing kit built on top of the Fat-Free Framework's `Test` class, and
+      uses it for its own test suite. Statera is an optional package for applications — developers can choose to use it
+      or integrate any other testing framework (such as PHPUnit) into their projects as needed.
 
 ## Features
 
