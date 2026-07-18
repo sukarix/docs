@@ -38,8 +38,9 @@ the class using the trait.
 
 ## Singleton Classes
 
-Any singleton class inheriting from `Tailored` will have the `init<TraitName>` methods called by default. This ensures
-that all behaviours are initialised properly without additional code.
+Any singleton class inheriting from `Tailored` must call `Processor::instance()->initialize($this);` in its constructor
+to ensure that the `init<TraitName>` methods are called. The `Helper` base class already does this, so classes extending
+`Helper` (directly or indirectly) only need to call `parent::__construct()`.
 
 ## Non-Singleton Classes
 
