@@ -34,7 +34,7 @@ scalability, and offer a more comprehensive development experience for building 
 | ACL                                        | -         | F3 Access                     |
 | Multi-language                             | -         | F3 Multilang                  |
 | Event Dispatching                          | -         | F3 Events                     |
-| Messages to chat platforms                 | -         | Guanguans Notify              |
+| Messages to chat platforms                 | -         | Sukarix Notifier (Zulip)      |
 | Database Migrations                        | -         | Phinx                         |
 | Debugging & Global Event Catching          | -         | Tracy                         |
 | Cron job scheduler                         | -         | peppeocchi/php-cron-scheduler |
@@ -47,8 +47,9 @@ scalability, and offer a more comprehensive development experience for building 
 - **Fast and clean template engine**: Provides a lightweight and efficient templating system that allows for easy
   creation of dynamic web pages.
 - **Unit testing toolkit (Web UI & CLI)**: Integrated tools for unit testing both web interfaces and command-line
-  interfaces, ensuring comprehensive code coverage and reliability. Powered by [Statera](../packages/statera.md), the
-  Sukarix testing kit built on top of the Fat-Free Framework's `Test` class.
+  interfaces, ensuring comprehensive code coverage and reliability. [Statera](../packages/statera.md) is the Sukarix
+  testing kit built on top of the Fat-Free Framework's `Test` class. It is an optional, standalone package — the
+  framework itself uses it via `require-dev` for its own test suite.
 - **Database-managed sessions**: Manages user sessions through the database, enhancing security and scalability.
 - **Markdown-to-HTML converter**: Converts Markdown syntax into HTML, facilitating easy content creation and management.
 - **Atom/RSS feed reader**: Parses and reads Atom and RSS feeds, allowing for integration with external content sources.
@@ -73,7 +74,8 @@ scalability, and offer a more comprehensive development experience for building 
   routes.
 - **Event Dispatching**: Handles event management using F3 Events, allowing for flexible and decoupled event-driven
   architecture.
-- **Messages to chat platforms**: Sends notifications to chat platforms like Zulip and Slack using Guanguans Notify.
+- **Messages to chat platforms**: Sends notifications to Zulip chat streams using the Sukarix Notifier, which uses F3's
+  `Web` class for HTTP requests — no external notification library required.
 - **Database Migrations**: Manages database schema changes using Phinx, ensuring smooth and controlled migrations.
 - **Debugging & Global Event Catching**: Utilizes Tracy for debugging and catching global events, providing detailed
   error reports and insights.
