@@ -101,22 +101,40 @@ final class ConfigurationTest extends Scenario
 
 ### Running Tests via CLI
 
-Create a `tools/statera.php` entry point:
+Create a `tools/statera.php` entry point in your application:
 
 ```php
+use Application\Application;
+use Core\Statera;
+
+// load composer autoload
 require_once __DIR__ . '/../vendor/autoload.php';
-chdir(realpath(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'app'));
+
+// Change to application directory to execute the code
+chdir(realpath(__DIR__ . '/../app'));
+
 $GLOBALS['test_cli'] = PHP_SAPI === 'cli';
+
+// Activate test environment so detectEnvironment() loads config-test.ini
 $f3 = Base::instance();
 if (!$f3->exists('GET.statera')) {
     $f3->set('GET.statera', 'all');
 }
-Core\Statera::registerGroups();
-$app = new Application\Application();
+
+Statera::registerGroups();
+Statera::startCoverage('Application Bootstrapping');
+$app = new Application();
+Statera::stopCoverage();
 $app->start();
 ```
 
 Run with: `php tools/statera.php`
+
+For coverage reports, pass the query string:
+
+```bash
+php tools/statera.php "?statera=withCoverage"
+```
 
 ### Test Environment
 
