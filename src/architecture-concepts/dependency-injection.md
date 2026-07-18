@@ -42,9 +42,10 @@ is in the table below:
 
 ## Creating Injectable Singletons
 
-For classes that should be singletons with behaviors, they must extend the `Sukarix\Core\Tailored` class. This ensures
-the framework can automatically integrate their behaviors. More details on these behaviors can be found in the Behaviors
-section of the documentation.
+For classes that should be singletons with behaviors, they must extend the `Sukarix\Core\Tailored` class and call
+`Processor::instance()->initialize($this)` in their constructor. The `Helper` base class already does this, so
+classes extending `Helper` only need to call `parent::__construct()`. More details on these behaviors can be found
+in the Behaviors section of the documentation.
 
 ```admonish info title="Instantiating an injectable singleton object"
 There is no need to manually instantiate the injected object, Sukarix will do it for you.
