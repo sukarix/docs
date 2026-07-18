@@ -2,7 +2,7 @@
 
 ## Support Policy
 
-Sukarix is currently supported for PHP 8.2+.
+Sukarix is currently supported for PHP 8.4+.
 
 ## Released versions
 
@@ -18,7 +18,7 @@ Sukarix is currently supported for PHP 8.2+.
 
 ### Changes
 
-- **PHPUnit Removal**: Dropped `phpunit/phpunit` from `require-dev` and removed `phpunit.xml.dist`. The framework's `InjectorTest` was converted from a PHPUnit `TestCase` to a Statera `TestScenario` using `expect()` assertions.
+- **PHPUnit Removal**: Dropped `phpunit/phpunit` and `phpunit/php-code-coverage` from `require-dev` and removed `phpunit.xml.dist`. The framework's `InjectorTest` was converted from a PHPUnit `TestCase` to a Statera `TestScenario` using `expect()` assertions. Code coverage is now provided transitively by Statera's own `phpunit/php-code-coverage` dependency.
 - **Statera Dependency**: Added `sukarix/statera` to `require-dev` so the framework uses its own testing kit for its test suite. Statera remains an optional, standalone package for applications.
 - **Test Runner**: Added `tools/statera.php` and test infrastructure (`tests/src/Test/`, `tests/src/Suite/`) to run the framework's tests via Statera.
 - **Statera Package**: Declared the previously-undeclared `sukarix/sukarix` runtime dependency in `sukarix/statera`'s `composer.json` (Statera uses `Sukarix\Utils\CliUtils` and `Sukarix\Utils\Time`).
