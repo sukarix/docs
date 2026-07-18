@@ -8,6 +8,9 @@ Statera is a testing package designed to work with Sukarix, offering an alternat
 coverage reports in formats like Clover, HTML, and Text. Statera operates in both Web and CLI modes, providing flexible
 testing options.
 
+Statera is an optional, standalone package — applications can choose whether or not to use it for unit testing. The
+Sukarix framework itself uses Statera for its own test suite via a `require-dev` dependency.
+
 ## Key Concepts
 
 ### TestGroup
@@ -17,13 +20,13 @@ groups, making it easier to manage and run tests collectively.
 
 ### TestScenario
 
-A `TestScenario` represents a specific test case or scenario. It encompasses multiple `UnitTest` instances that define
+A `TestScenario` represents a specific test case or scenario. It encompasses multiple `TestCase` instances that define
 the individual tests to be run as part of the scenario.
 
-### UnitTest
+### TestCase
 
-A `UnitTest` is an individual test case created inside a `TestScenario`. It contains the actual test logic and
-assertions to verify the expected behavior of the code under test.
+A `TestCase` is an individual test case created inside a `TestScenario`. It extends the Fat-Free Framework's `Test`
+class and provides the `expect()` method for assertions to verify the expected behavior of the code under test.
 
 ## Running Tests
 
